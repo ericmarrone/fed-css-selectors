@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>CSS Fundamentals</title>
-    <link rel="stylesheet" href="styles.css">
+
 
     <!-- Un-comment the following line to see what the document looks like with the CSS Reset applied -->
     <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> -->
@@ -17,6 +17,7 @@
 
     <!-- Create another <link> tag to import the styles.css file -->
     <!-- That file is where you will put your styles -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
@@ -135,31 +136,31 @@
       </p>
 
       <ol>
-        <li class=>
+        <li class="mainitem">
           <p>
             Style every item in this list with some <code>padding</code> and a
             <code>background-color</code> of grey
           </p>
         </li>
-        <li>
+        <li class="mainitem">
           <p>
             Make sure that the list of subitems below isn't affected by the
             above style rules! (Note - if you happen to use a relationship-based selector to do this, the background color may not change - why might that be?)
           </p>
         </li>
-        <li>
+        <li class="mainitem">
           <p>
             Use the <code>:nth-child</code> pseudo-selector to turn the
             <code>background-color</code> of every odd list item green.
           </p>
         </li>
-        <li>
+        <li class="mainitem">
           <p>
             Select this link by its title attribute and turn off the underline when it's hovered
             <a href="https://bitmakerlabs.com/" title="Bitmaker">Bitmaker Labs</a>
           </p>
         </li>
-        <li>
+        <li class="mainitem">
           <p>
             The links in this list should have a <code>background-color</code>
             of yellow when hovered and red when active. This shouldn't affect the links

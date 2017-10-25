@@ -38,16 +38,30 @@ header {
   text-align: right;
 }
 
+
 #advanced-selectors li:not(.subitem){
   padding: 5px;
   background-color: grey;
 }
 
+
 #advanced-selectors li:nth-child(2n+1){
   background-color: green;
 }
 
-a[title*="Bitmaker"]:hover {
-  text-decoration: line-through;
+.subitem {
+  background-color: none;
+}
 
+a[title*="Bitmaker"]:hover {
+  text-decoration: none;
+
+}
+
+.subitem a:hover {
+  background-color: yellow;
+}
+
+.subitem a:active{
+  background-color: red;
 }
